@@ -6,7 +6,8 @@ ARG package_args='--allow-downgrades --allow-remove-essential --allow-change-hel
 ARG user_id=2000
 ARG group_id=2000
 
-COPY packages/sources.list /etc/apt/sources.list
+# Use new deb822 sources
+COPY packages/ubuntu.sources /etc/apt/sources.list.d/ubuntu.sources
 
 RUN echo "debconf debconf/frontend select noninteractive" | debconf-set-selections && \
   export DEBIAN_FRONTEND=noninteractive && \
