@@ -1,6 +1,6 @@
 # Cloud Foundry stack: cflinuxfs5
 
-This stack is derived from Ubuntu 22.04 LTS (Jammy Jellyfish)
+This stack is derived from Ubuntu 24.04 LTS (Noble Numbat)
 
 ## Dependencies
 
